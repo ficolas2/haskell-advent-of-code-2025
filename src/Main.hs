@@ -6,6 +6,7 @@ import qualified Day02
 import qualified Day03
 import qualified Day04
 import qualified Day05
+import qualified Day06
 
 main :: IO ()
 main = do
@@ -23,6 +24,7 @@ runTask 2 = Day02.run
 runTask 3 = Day03.run
 runTask 4 = Day04.run
 runTask 5 = Day05.run
+runTask 6 = Day06.run
 runTask n
   | n > 0 && n <= 12 = putStrLn "Day not done yet"
   | otherwise        = putStrLn "Number must be between 1 and 12"
